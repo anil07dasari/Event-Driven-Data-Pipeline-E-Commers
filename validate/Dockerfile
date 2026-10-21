@@ -15,6 +15,8 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 
 WORKDIR /app
 
+
+
 # Copy requirements and Makefile first (for better layer caching)
 COPY requirements.txt Makefile ./
 
